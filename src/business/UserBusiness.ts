@@ -61,7 +61,7 @@ export class UserBusiness {
     const hashedPassword = await this.hashManager.hash(password)
 
     const newUser = new User(
-      id,
+      id, //"id-mock"
       name,
       email,
       hashedPassword,
